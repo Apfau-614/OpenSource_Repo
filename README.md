@@ -1,18 +1,18 @@
 # Pytest Lab
 
 In this lab you will walk through the basic procedure for creating and contributing to an open source project.
-You will also walk through how to use the pytest framework for running test cases.
+
+<img src=img/meme.jpg width=300px />
 
 ## Instructions
 
-You will need a partner to complete this lab,
-so introduce yourself to someone next to you.
-A team of 3 is okay if that's all that is available.
+You will need a partner to complete this lab.
+Try to work with someone you don't already know.
 
-In part 1 below you will prepare a new repo.
-In part 2, your partner will contribute to your repo (and you to theirs).
+In part 0 below you will prepare a new repo on your own account.
+In part 1, your partner will contribute to your repo (and you to theirs).
 
-**Part 1:**
+### Part 0: Creating your repo
 
 1. Create a new repository by clicking the "+" sign in the top right corner of the github webpage.
 
@@ -67,7 +67,7 @@ In part 2, your partner will contribute to your repo (and you to theirs).
     Instead, your partner will follow the steps in Part 2 below to fix your repo.
     (And you will follow the steps to fix theirs.)
 
-**Part 2:**
+### Part 1: Contributing to your partner's repo
 
 1. Fork your partner's repo.
 
@@ -77,31 +77,6 @@ In part 2, your partner will contribute to your repo (and you to theirs).
     ```
     $ python3 -m pytest
     ```
-
-    > **NOTE:**
-    > The first time you run this command, you may get an error message saying that `No module named pytest`.
-    > In that case, you need to run the command
-    > ```
-    > $ pip3 install pytest
-    > ```
-    > to download and install the library.
-
-    You should see 5 failing test cases.
-    These test cases are located in the file `tests/test_main.py`.
-    You should open this file in vim and visually inspect it.
-
-    Each function in the file is a single test case.
-    <!--
-    The function `evens` being tested is the same function you had on the last homework assignment,
-    I've just rewritten the tests to use the pytest framework instead of the doctest framework.
-    In this new framework, a test case is "passed" whenever a function returns without an exception,
-    and a test is "failed" whenever a function throws an exception.
-    (Recall that `assert` throws an exception whenever the expression to the right evaluates to `False`.)
-    -->
-
-    Doctests are generally used for very simple tests,
-    but soon in this class we will need more complicated tests that don't work well for doctests.
-    The pytest framework is good for these complicated tests.
 
 1. Modify the `Fixme.py` file so that all of the tests pass.
 
@@ -114,6 +89,9 @@ In part 2, your partner will contribute to your repo (and you to theirs).
 1. When you receive your partner's pull request, you should see an option to run the github actions before accepting the merge.
     You should do this and check that the change fixes the test cases before accepting the pull request.
 
+    Test cases allow us to collaborate effectively with each other and ensure that our code is always *provably* correct.
+    Maintainers of open source projects won't accept contributions that break test cases.
+
 ## Submission
 
-Paste the URL to both your repo and your partner's repo into sakai.
+Paste the URL to both your repo and your partner's repo into canvas.
