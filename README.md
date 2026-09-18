@@ -1,4 +1,5 @@
-# Open source practice
+# Open source practice [![](https://github.com/Apfau-614/OpenSource_Repo/workflows/tests/badge.svg)](https://github.com/Apfau-614/OpenSource_Repo/actions?query=workflow%3Atests)
+
 
 In this lab you will walk through the basic procedure for creating and contributing to an open source project.
 
