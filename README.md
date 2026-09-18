@@ -1,4 +1,4 @@
-# Pytest Lab
+# Open source practice
 
 In this lab you will walk through the basic procedure for creating and contributing to an open source project.
 
